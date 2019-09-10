@@ -2,3 +2,5 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Clay's Blog"
 theme = "ananke"
+pygmentsCodefences = true
+pygmentsStyle = "monokai"
