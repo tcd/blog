@@ -142,3 +142,23 @@ def from_unix(unix_time)
   Time.at(unix_time).strftime('%F-%H-%M-%S')
 end
 ```
+
+## UPDATE
+
+Ruby 2.6.5 introduced a new method that solves this particular problem: [`Time.strptime`](https://ruby-doc.org/stdlib-2.6.5/libdoc/time/rdoc/Time.html#method-c-strptime), which sort of acts like a reverse `strftime`.
+
+Here's the new solution:
+
+```ruby
+require 'time'
+
+def to_unix(file_name)
+  raise ArgumentError, 'Invalid argument' unless stamp.length >= 19
+  stamp = file_name[0..18]
+  return Time.strptime(stamp, '%F-%H-%M-%S').to_i()
+end
+
+def from_unix(unix_time)
+  Time.at(unix_time).strftime('%F-%H-%M-%S')
+end
+```
