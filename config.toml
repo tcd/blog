@@ -1,7 +1,7 @@
 baseURL = "https://tcd.lol"
 languageCode = "en-us"
 title = "Clay's Blog"
-theme = "tcd"
+theme = "ananke"
 pygmentsCodefences = true
 pygmentsStyle = "monokai"
 
