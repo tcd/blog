@@ -1,0 +1,10 @@
+{
+  "name": "hugo-theme-tcd",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No tests'"
+  },
+  "author": "Clay Dunston <dunstontc@gmail.com>",
+  "license": "MIT"
+}
