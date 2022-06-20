@@ -1,4 +1,7 @@
 {
     // "terminal.integrated.defaultProfile.windows": "PowerShell",
-    // "terminal.integrated.defaultProfile.windows":"Ubuntu-20.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "cSpell.words": [
+        "imageable"
+    ],
 }
